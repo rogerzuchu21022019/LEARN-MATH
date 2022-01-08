@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Bai1">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilNumber1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="outline"
+        app:counterEnabled="true"
+        app:counterMaxLength="4"
+        app:counterTextAppearance="@drawable/number1"
+        app:endIconMode="clear_text"
+        app:helperText="Require*"
+        app:helperTextEnabled="true"
+        app:helperTextTextColor="@color/red_color"
+        app:startIconDrawable="@drawable/number1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tieNumber1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="@string/hint_number1"
+            android:maxLength="10"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilNumber2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="outline"
+        app:counterEnabled="true"
+        app:counterMaxLength="4"
+        app:endIconMode="clear_text"
+        app:helperText="@string/require_text"
+        app:helperTextEnabled="true"
+        app:helperTextTextColor="@color/red_color"
+        app:startIconDrawable="@drawable/number2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tieNumber2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="@string/hint_number2"
+            android:maxLength="10"
+            android:textColorHint="@color/red_color"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnTong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+        android:text="Tong"></androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnHieu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Hieu"></androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnTich"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Tich"></androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnThuong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+        android:text="Thuong"></androidx.appcompat.widget.AppCompatButton>
+
+    <TextView
+        android:id="@+id/tvBai1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/result"
+        android:text=""
+        android:textSize="20sp" />
+
+
+</LinearLayout>
